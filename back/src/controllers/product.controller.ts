@@ -36,7 +36,7 @@ export class ProductController {
             excludeExtraneousValues: true,
           })
       );
-      productService
+      productService 
         .createProducts(createProducts)
         .then((products: Product[]) => {
           res.status(200).json(products);
